@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* CSS POSITION PROPERTY
+"The position CSS property specifies how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements." (https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+*/
+
+/* STEP 1: Style the ASIDE element - change the background-color, and the width properties */
+aside {
+
+}
+
+/* STEP 2: Change the position property of the ASIDE element - static | relative | absolute | sticky - proceed to STEP 2a below */
+
+/* STEP 2a: Postion static - this is the default, and the element is within the 'flow' of the page content */
+aside {
+
+}
+
+/* STEP 2b: Position relative - this leaves the element in the page 'flow', but allows you to offset it's position with the top, right, bottom, and left properties. */
+aside {
+
+}
+
+/* STEP 2c: Position absolute - this removes the element from the page 'flow' (watch surrounding elements move in to take up the space that it occupied before), and allows you to place it with respect to the document window using the top, right, bottom, and left properties. Comment out the above top, right, bottom, and left properties and values. */
+aside {
+
+}
+
+/* STEP 2d: Use a variety of values to place the element with respect to the document window in the above CSS rule */
+
+/* STEP 3: Position sticky - this leaves the element within the document 'flow', but if the user scrolls down, it will stick to the top or bottom of the document window using a specified distance (top or bottom properties). Comment out the above top, right, bottom, and left properties and values, then experiment with this - be sure to reduce the width of the browser window to enable scrolling. */
+aside {
+
+}
+
+/* STEP 4: Positioning context - absolutely positioned elements are placed on the screen using the position of the next positioned ancestor. So… if a containing parent element is positioned (absolute or relative is set to any value at all), a positioned child will use the parent's position (top left corner, specifically) as a reference point. */
+
+/* STEP 4a: We are going to style the P element with the '?' inside it - comment out the above top, right, bottom, and left properties and values for the ASIDE, then position the ASIDE with absolute - place it 25px from the top, and 25px from the right of the document window (HTML element) */
+aside {
+
+}
+
+aside p strong {
+	display: inline-block;
+	background-color: darkblue;
+	color: white;
+	font-size: 2em;
+	padding: 0.25em;
+	/* STEP 4b: Position the blue question mark box (ASIDE P STRONG) with absolute, and see how you can place it within the positioned ASIDE parent element, instead of the document window. */
+
+}
+
+/* STEP 4c: Change the postion of the containing ASIDE element and watch the dark blue question mark move with it. */
+
+/* STEP 5a: Elements that are positioned have a vertical stacking order, z-index - set the HEADER element to position: absolute, with a background color of 'lightgoldenrodyellow' (seriously) */
+header {
+
+}
+/* STEP 5b: position the HEADER at the top right of the document window - since it is earlier in the code source order, it is rendered underneath the later ASIDE element */
+
+/* STEP 5c: Set the z-index of the HEADER to '2' - z-index can be anywhere from 0-999 */
+
+/* STEP 5d: Set the z-index of the ASIDE to '3' - observe the result in the browser - and we're all done! */

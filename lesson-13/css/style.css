@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* Basic layout styles */
+body {
+	background: black;
+	font-size: 100%;
+}
+#container {
+	background: #ccc;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2.5%;
+}
+header, section, footer {
+	background: #fff;
+	padding: 2.5%;
+	margin-bottom: 1em;
+}
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* STEP 4: Add styles to visually communicate that this is a small screen - use the ::after psuedoelement and the content property to add some text after the H1 */
+
+/* Smartphone/small screen styles */
+
+/* STEP 5: Edit the above CSS to set the background color of the #container to lightblue */
+
+/* STEP 6a: Add a media query to target medium window sizes (tablets) that are a minimum of 481px */
+
+	/* Tablets/medium screen styles */
+
+	/* The first SECTION element inside the MAIN should stretch all the way across the page layout container */
+
+	/* The second and third SECTION elements should sit side-by-side - remember the box model when setting the width with flex-basis */
+
+/* STEP 6b: Edit the above CSS to set the background color of #container to orange and arrange the page in 2-column layout with the first section on top of the second and third sections (using flexbox) */
+
+/* STEP 7a: Add another media query to target only screens 1025px or larger (notebooks and desktops)*/
+
+	/* Desktops/large screen styles */
+
+/* STEP 7b: Edit the above CSS to set the background color of #container to olive and arrange the page in a 3-column layout (using flexbox) */
+
+/* STEP 8: Add an OR conditional (,) to the above media query that applies the above CSS if the device is being held in landscape orientation, rather than portrait */
+
+/* STEP 9: Try the orientation switch using the browser developer tools to watch 'orientation: landscape' in action, then go back to the file 'index.html' for STEP 10

@@ -1,0 +1,22 @@
+body {
+	font-family: Georgia, "Times New Roman", serif;
+    font-size: 12pt;
+}
+#container {
+	background: #fff;
+	width: auto;
+	margin: 1in;
+	padding: 0;
+}
+header, section, footer {
+	padding: 0;
+	margin-bottom: 0.5in;
+	line-height: 1.5;
+    border-bottom: 1pt solid grey;
+}
+h2 {
+    text-transform: uppercase;
+}
+p {
+    text-indent: 4em;
+}

@@ -1,0 +1,146 @@
+/* Page Layout */
+body {
+	width: 760px;
+	margin: 75px auto;
+	position: relative;
+}
+header h1 {
+	width: 350px;
+	height: 120px;
+	position: absolute;
+	left: -40px;
+	top: -90px;
+	transform: rotate(-5deg);
+}
+header h1 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -999px;
+	overflow: hidden;
+}
+main {
+	padding: 95px 105px 25px 250px;
+	min-height: 400px;
+}
+main p.bubble {
+	width: 384px;
+	height: 91px;
+	position: relative;
+	left: 75px;
+	padding: 35px 10px 0 90px;
+}
+#robot {
+	position: absolute;
+	left: 90px;
+	top: 80px;
+	z-index: 10;
+}
+nav {
+	width: 220px;
+	height: 500px;
+	position: absolute;
+	top: 75px;
+	left: -75px;
+	transform: rotate(2deg);
+}
+footer {
+	padding: 20px;
+	transform: rotate(-2deg);
+	position: relative;
+	left: 20px;
+}
+footer p img {
+	float: left;
+	margin-right: 10px;
+}
+
+/* Typography */
+body {
+	font: normal normal 100%/1.4 Helvetica, Arial, sans-serif;
+	color: #333;
+	/* STEP 6: INHERITANCE - Change the font for the BODY and observe the children (all HTML elements inside the BODY tags in this case) in the rendered page */
+
+}
+main h2 {
+	font-size: 120%;
+	font-weight: bold;
+	color: darkorange;
+	text-transform: uppercase;
+	text-align: right;
+	margin-bottom: 0;
+}
+main h3 {
+	font-size: 250%;
+	font-weight: bold;
+	color: #800080;
+	margin-top: 0;
+	text-align: right;
+}
+/* STEP 3: Style the H4 element, creating a selector, and setting CSS properties and values that will display fourth-level headings in boldface and red in colour - save the file, observe the change in your browser and head back to ion-storm.html for STEP 4 */
+
+
+main p {
+	margin-bottom: 1em;
+}
+main p.bubble{
+	font-size: 120%;
+	margin-bottom: 0;
+	margin-top: -20px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 30px 20px 30px 0;
+}
+nav li {
+	margin-bottom: 0.25em;
+}
+/* STEP 7a: ORDER - Change the case of the A elements by setting the text-transform property to 'uppercase' */
+
+
+/* STEP 7b: ORDER - Change the case of the A elements again, setting them this time to 'lowercase' - notice that the later value wins out */
+
+/* STEP 8: SPECIFICITY - Change the first rule for A above to include a more specific selector - change it to 'nav a' - notice this now wins out over the later rule because it is more precise than the latter selector */
+
+/* STEP 9: IMPORTANCE - Add the !important keyword to the second, less-specific rule above with the 'A' selector - notice this now wins out over the earlier, more specific rule - be aware that !important breaks the CSS cascade and should be used with care (usually just for troubleshooting) - head back to index.html to finish up with STEP 10 */
+
+nav a:link{
+	color: #FFF;
+	text-decoration: none;
+}
+nav a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}
+nav a:active{
+	color: #DE0012;
+	text-decoration: none;
+}
+footer p {
+	font-size: 70%;
+}
+
+/* Colour */
+body {
+	background-color: #555555;
+}
+header h1{
+	background: transparent url('../images/logo-robo-blasters.svg') top left no-repeat;
+}
+main {
+	background-color: #FFF;
+}
+main p.bubble {
+	background: transparent url('../images/speech_bubble.png') top left no-repeat;
+}
+nav {
+	background-color: darkorange;
+}
+footer {
+	color: white;
+	background-color: darkorange;
+}

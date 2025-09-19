@@ -1,0 +1,53 @@
+/* This document is a Cascading Style Sheet or CSS */
+
+/* STEP 2a: Create a simple 'type' selector to style the H1 HTML element */
+
+
+/* STEP 2b: Open and close a pair of braces that will encapsulate the CSS declarations */
+/* STEP 2c: Include the 'color' property inside the braces, followed by a ': ' */
+/* STEP 2d: Set the value of the property to 'red', and complete the declaration (consisting of a value and a property) with a semi-colon */
+/* STEP 2e: Save this file and view/refresh the index.html page in your browser - you have created a CSS rule or ruleset */
+
+/* STEP 3: TYPE/ELEMENT Selector - Create a rule with a selector that targets all H3 elements, setting them to the color 'orange' */
+
+
+/* STEP 4: CLASS Selector - Build another CSS rule that targets all elements with the class 'threat' and sets the background-color to 'yellow' */
+
+
+/* STEP 5: ID Selector - Make another CSS rule that targets an element with the id 'robot', and sets the background-color to 'hotpink' */
+
+
+/* STEP 6: UNIVERSAL Selector - Craft a selector that targets EVERY element and sets the border property to '3px solid lightblue' - be aware that this can slow page rendering as it is very resource intensive */
+
+
+/* STEP 7a: ATTRIBUTE Selector - Build a selector that targets any element with the attribute, 'lang', setting the border to '5px dotted red' */
+
+/* STEP7b: Try some other regular expression type variations -
+
+	[attr|="val"] - all elements with the attribute attr for which the value is exactly "val" or starts with "val-" (the trailing dash here handles language codes)
+	[attr^="val"] - all elements with the attribute attr for which the value starts with "val"
+	[attr$="val"] - all elements with the attribute attr for which the value ends with "val"
+	[attr*="val"] - all elements with the attribute attr for which the value contains the substring "val"
+
+See https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors for more specifics */
+
+/* STEP 8: PSEUDOCLASS Selector - Build another selector that targets and paragraph element that is being hovered over with a pointer (:hover), setting the background-color to 'limegreen' */
+
+
+/* STEP 9a: PSEUDOELEMENT Selector - Create a selector to set the first letter of each paragraph to a llarger size with font-size: 300% */
+
+
+/* STEP 9b: PSEUDOELEMENT Selector - Type out another similar rule that targets the first line of each paragraph and sets the font-weight to 'bold' (you may have to reduce the width of the browser window to appreciate how this works visually)*/
+
+
+/* STEP 10: DECENDENT/CONTEXTUAL Selector - Make a selector that ONLY targets EM elements when they are contained by a Q element - set the text-transform to 'uppercase' - note how this avoids styling all the other EM elements on the page */
+
+
+/* STEP 11: CHILD/DIRECT-DESCENDENT Selector - Create a selector that targets EM elements ONLY when they are directly contained by a P element - set the color to red - note that the EM element inside the Q (which is a child of a P) is NOT affected */
+
+
+/* STEP 12a: ADJACENT SIBLING Selectors - Build a selector that targets ONLY P elements that are next to an H2 element and they share the same parent - set the margin to '2em' */
+
+/* STEP 12b: GENERAL SIBLING Selectors - Adjust the selector above so that it targets ALL P elements that are siblings of an H2 element, sharing the same parent */
+
+/* STEP 13: GROUPED Selectors - Finally, Add one last CSS rule that sets the font-family to 'Impact' for both H1 and H2 elements by separating the element selectors with a comma */

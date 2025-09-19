@@ -1,0 +1,50 @@
+body {
+	font-family: "Helvetica","Arial",sans-serif;
+	color: #333;
+	background-color: #ccc;
+	margin: 0;
+}
+#page{
+	width: 906px;
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	color: #333;
+	background-color: transparent;
+	font-weight: normal;
+}
+a {
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:link {
+	color: #c60;
+}
+a:visited {
+	color: #c60;
+}
+a:hover {
+	color: #e80;
+}
+a:active {
+	color: #fff;
+	position: relative;
+	top: 2px;
+}
+ul {
+	margin: 0 auto;
+	padding: 0;
+}
+li {
+	display: inline;
+	padding: 1em;
+	list-style: none;
+}
+#placeholder{
+	display: block;
+	clear: left;
+	margin: 1em auto;
+	border-radius: 7px;
+}

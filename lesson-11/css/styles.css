@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* Set the default box-sizing to border-box, and force all children to inherit */
+html {
+    box-sizing: border-box;
+    font: 125%/1.4 Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* STEP 12: Comment out all colored borders, and put a background-color on the below NAV element */
+nav {
+    
+    
+}
+/* STEP 1: Outline elements to help with styling (NAV, UL, LI, and A) */
+nav ul {
+    
+    /* STEP 2: Turn off list markers */
+    
+    /* STEP 3: Zero out padding on all UL elements in the NAV */
+    
+    /* STEP 13a: Put a background-color on the UL elements to hide the text underneath - and a 5px solid black border */
+    
+}
+nav li {
+    
+    /* STEP 4: Set the 1st-level LI element to render horizontally */
+    
+    /* STEP 6: Set position of 1st-level LI to relative so 2nd-level ULs can be placed with respect to their parent LI */
+    
+}
+nav li ul {
+    /* STEP 7: Set position of 2nd-level lists to 'absolute' */
+    
+    /* STEP 8: Hide the 2nd-level lists */
+    
+    /* STEP 11: Set a consistent width on the 2nd-level UL (15em or so) */
+    
+    /* STEP 15: Add a top colored border to the 2nd-level UL to make it look like it is part of the navigation bar */
+    border-top: 5px solid darkorange;
+}
+/* STEP 5: Arrange the 2nd-level list items vertically again */
+nav li li {
+    
+}
+nav li a {
+    
+    /* STEP 10: Set anchors to function as full-width clickable bars with display: block */
+    
+}
+/* STEP 9: Show the 2nd-level list (UL) when the parent LI is moused over (:hover) or it is in focus (:focus-within) - you will need to build a grouped selector */
+
+
+/* STEP 14: Style the hyperlinks using pseudoclasses - :link, :visited, :focus, :hover, :active (LVFHA) */
+nav a {
+    
+}
+nav a:link {
+    
+}
+nav a:visited {
+    
+}
+nav a:focus {
+    
+}
+nav a:hover {
+    
+}
+nav a:active {
+    
+}
+
+
+main section h2 img {
+    float: right;
+}
+
+/* Special thanks to Stephanie Eckles - https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/ and also to Una Kravets at https://css-tricks.com/solved-with-css-dropdown-menus/ */
