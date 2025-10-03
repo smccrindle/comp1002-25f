@@ -13,23 +13,23 @@
 		<section>
 			<h2><abbr title="Joint Photographic Experts Group">JPEG / JPG</abbr></h2>
 			<!-- STEP 1: A JPEG image embedded with IMG (include alt, height, and width attributes) -->
-			
+			<img src="img/sunset.jpg" alt="Sunset in Coquitlam, BC" width="512" height="384" />
 			<p>"Sunset in Coquitlam" by Chad Teer from Coquitlam, Canada (Flickr.com - image description page) [<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Sunset_in_Coquitlam.jpg">via Wikimedia Commons</a></p>
 		</section>
 		<section>
 			<h2><abbr title="Graphics Interchange Format">GIF</abbr> with Transparency</h2>
 			<!-- STEP 2: A GIF image embedded with IMG -->
-			
+			<img src="http://127.0.0.1:3000/comp1002-25f/lesson-5/img/sun.gif" alt="Illustration of sun" height="218" width="218" />
 			<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
 		</section>
 		<section>
 			<h2><abbr title="Portable Network Graphics">PNG</abbr> 8-Bit and 24-Bit with Transparency</h2>
 			<!-- STEP 3a: An 8-bit PNG (with transparency) image embedded with IMG -->
-			
+			<img src="img/sun-8bit.png" alt="Sun" width="218" height="218" />
 			<!-- STEP 3b: A 24-bit PNG (with transparency) image embedded with IMG -->
-			
+			<img src="img/sun-24bit.png" alt="Sun" width="218" height="218" />
 			<!-- STEP 3c: Optimize the 24-bit PNG with a Web app like https://compressor.io/. This will produce an 8-bit PNG with alpha transparency. Examine and compare the resulting file sizes -->
-
+			<img src="img/sun-24bit-compressed-2.png" alt="Sun" width="218" height="218" />
 			<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
 		</section>
 		<section>
@@ -40,17 +40,22 @@
 		<section>
 			<h2><abbr title="Scalable Vector Graphics">SVG</abbr></h2>
 			<!-- STEP 4a: An SVG image embedded with IMG -->
-			
+			<img src="img/sun.svg" alt="Sun" style="max-width: 500px;" />
 			<!-- STEP 4b: Scale up the above SVG by changing the height and width attribute values - then do the same with one of the above PNG versions of the same image and compare the two in a browser -->
-
+			
 			<!-- STEP 4c: An SVG image embedded with inline SVG -->
 
-			<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
+			
 		</section>
 		<section>
 			<h2>The <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> Elements</h2>
 			<!-- STEP 5: Copy the IMG element above featuring a sunset -->
-			
+			<figure>
+				<img src="img/sun-24bit-compressed-2.png" alt="Sun" width="218" height="218" />
+				<figcaption>
+					<p>"Sun" by purzen [Public Domain], <a href="https://openclipart.org/detail/176488/sun">via openclipart.org</a></p>
+				</figcaption>
+			</figure>
 			<!-- STEP 6a: Wrap the IMG element with a FIGURE element -->
 
 			<!-- STEP 6b: After the IMG element, but inside the FIGURE, add a FIGCAPTION element, with an appropriate caption -->
@@ -58,7 +63,7 @@
 		<section>
 			<h2>Animated <abbr title="Graphics Interchange Format">GIF</abbr> with Transparency</h2>
 			<!-- STEP 7: An animated frame-by-frame GIF image embedded with IMG -->
-			
+			<img src="img/arrow-spinner.gif" alt="Spinner" />
 		</section>
 	</main>
 	<footer>
