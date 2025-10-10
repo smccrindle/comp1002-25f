@@ -15,16 +15,10 @@
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
 			<!-- Global site navigation -->
-			<nav>
-				<ul>
-<!-- STEP 9a: Notice how none of the below links work - this is because the path to the pages is not correct - from here, we need to navigate UP out of the 'about' folder in the file system -->
-					<li><a href="../index.php" title="Go to the Home page">Home</a></li>
-					<li><a href="../red.php" title="Learn about red blocks">Red Blocks</a></li>
-					<li><a href="../blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
-					<li><a href="../yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
-<!-- STEP 9b: Fix each of the above href paths to point up out of the current directory with "../" - for example, to go up and back to the index.php (Home page), href="../index.php" would do the trick -->
-				</ul>
-			</nav>
+<?php
+	// Grab site navigation
+	include("../includes/nav.php");
+?>
 		</header>
 		<!-- Page-level main content -->
 		<main>

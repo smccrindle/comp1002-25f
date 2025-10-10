@@ -13,6 +13,10 @@
 		<header>
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
+<?php
+	// Grab site navigation
+	include("includes/nav.php");
+?>
 		</header>
 		<!-- Page-level main content -->
 		<main>
