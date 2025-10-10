@@ -15,7 +15,14 @@
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
 <!-- STEP 3: Build a NAV element for global Web site navigation -->
-
+			<nav>
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="red.php">Red blocks</a></li>
+					<li><a href="blue.php">Blue blocks</a></li>
+					<li><a href="yellow.php">Yellow blocks</a></li>
+				</ul>
+			</nav>
 <!-- STEP 4a: Let's build a list of hyperlinks inside the above NAV element linking this page to other pages in the site - create an unordered list element (UL) -->
 <!-- STEP 4b: Create a list item inside the UL (LI) -->
 <!-- STEP 4c: Insert an A element inside the LI, and add an href that points to the HTML page 'red.php' - include also some text for the hyperlink -->
@@ -59,7 +66,7 @@
 				<figure>
 					<img src="images/mini-figure.png" width="176" height="285" alt="Mini figure">
 <!-- STEP 1a: Build an A (anchor) element that surrounds the word 'LEGO®' inside the FIGCAPTION below -->
-					<figcaption><a href="https://www.lego.com/">LEGO®</a> mini figure by Vanja (Public Domain)</figcaption>
+					<figcaption><a href="https://www.lego.com/" rel="external" title="Go to the official LEGO Web site">LEGO®</a> mini figure by Vanja (Public Domain)</figcaption>
 					<!-- Mini figure by Vanja (Public Domain) https://openclipart.org/detail/224315/clip-is-a-brick-minifig-4 -->
 <!-- STEP 1b: Add an href attribute with the value set to the URL, "https://www.lego.com/" - this is an absolute URL -->
 <!-- STEP 1c: Since the link is pointing to somewhere other than this Web site, it is an external URL - as such, add rel="external" to the above A element start tag -->
@@ -80,7 +87,10 @@
 		<!-- Page-level footer -->
 		<footer>
 <!-- STEP 8a: Create a NAV element in the FOOTER for the legal stuff -->
-
+			<nav>
+				<a href="about/privacy-policy.php">Privacy Policy</a>
+				<a href="about/privacy-policy.php#personal-information">Use of Personal Information</a>
+			</nav>
 <!-- STEP 8b: Build a link to the page 'Privacy Policy' - note that the href will need to be a relative path that points from this page, down into the 'about' folder -->
 <!-- STEP 8c: Construct a second link that takes the visitor to the element with the id="personal-information" on the very same page, by appending the id value to the URL with a hash symbol (#personal-information) - this is called page-level navigation -->
 <!-- STEP 8d: Try it in your browser, then proceed to about/privacy-policy.php in your code editor for the next step -->
