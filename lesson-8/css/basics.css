@@ -1,7 +1,10 @@
 /* This document is a Cascading Style Sheet or CSS */
 
 /* STEP 2a: Create a simple 'type' selector to style the H1 HTML element */
-
+h1 {
+	color: #c97b17;
+	font-family: sans-serif;
+}
 
 /* STEP 2b: Open and close a pair of braces that will encapsulate the CSS declarations */
 /* STEP 2c: Include the 'color' property inside the braces, followed by a ': ' */
@@ -9,16 +12,25 @@
 /* STEP 2e: Save this file and view/refresh the index.html page in your browser - you have created a CSS rule or ruleset */
 
 /* STEP 3: TYPE/ELEMENT Selector - Create a rule with a selector that targets all H3 elements, setting them to the color 'orange' */
-
+h3 {
+	color: orange;
+}
 
 /* STEP 4: CLASS Selector - Build another CSS rule that targets all elements with the class 'threat' and sets the background-color to 'yellow' */
-
+.threat {
+	background-color: yellow;
+}
 
 /* STEP 5: ID Selector - Make another CSS rule that targets an element with the id 'robot', and sets the background-color to 'hotpink' */
-
+#robot {
+	background-color: hotpink;
+	border: 10px dotted purple;
+}
 
 /* STEP 6: UNIVERSAL Selector - Craft a selector that targets EVERY element and sets the border property to '3px solid lightblue' - be aware that this can slow page rendering as it is very resource intensive */
-
+* {
+	border: 3px solid lightblue;
+}
 
 /* STEP 7a: ATTRIBUTE Selector - Build a selector that targets any element with the attribute, 'lang', setting the border to '5px dotted red' */
 
