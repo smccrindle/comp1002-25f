@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* STEP 2: TYPE/ELEMENT Selector - Create a selector that targets the HTML element, with a rule that sets the background-color to 'lightskyblue' */
+
+
+body {
+	font-family: Tahoma, Verdana, sans-serif;
+	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1024px;
+}
+/* Arrange the SECTION and the ASIDE elements side-by-side in columns */
+main {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+/* Make the SECTION column a bit wider than the ASIDE column */
+main section {
+	width: 60%;
+}
+main aside {
+	width: 40%;
+}
+
+/* STEP 3: CLASS Selector - Create a selector that targets all elements with the class 'new-feature', and put the following declarations inside the braces (this puts a little NEW tag beside anything with this class):
+	display: inline-block;
+	padding-right: 25px;
+	background-image: url("../images/new.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+*/
+
+
+/* STEP 4: ID Selector - Create a selector that targets the specific element id (emailAddress) for the email form field on the home page, and set the font-weight property to 'bold' */
+
+
+/* STEP 5: ATTRIBUTE Selector - Build a CSS selector that targets hyperlinks that have the rel attribute set to the value 'external', then add the following properties and values (this will add a little external-link icon to the link):
+	padding-left: 20px;
+	background-image: url("../images/new.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+*/
+
+
+/* Thank you to 'pnx' at https://openclipart.org/detail/202731/external-link-icon for the very cool external link icon */
+
+main a {
+	text-decoration: none;
+	color: lightskyblue;
+	font-weight: bold;
+}
+/* STEP 6: PSEUDOCLASS Selector - Type a selector that targets A elements (hyperlinks) that are a decendent of the MAIN element (hint: see rule just above), and that are currently being hovered over by the mouse pointer - set the text-decoration to 'underline' and the color to orange */
+
+
+/* STEP 7: PSEUDOELEMENT Selector - Build a selector below that targets the first letter of a BLOCKQUOTE element, then set the font-size to '2em' */
+
+
+/* STEP 8: DECENDENT/CONTEXTUAL Selector - Type a selector that targets P elements that are contained by a FOOTER element, and set the text-align property to 'right' */
+
+
+/* STEP 9: CHILD/DIRECT-DESCENDENT Selector - Assemble a CSS selector below that only targets P elements that are directly descended from a SECTION element, and set the text-indent property to '3em' */
+
+
+/* STEP 10: GROUPED Selector - To wrap up, create a selector that sets the color to 'white' for H1, H2 and FOOTER elements */

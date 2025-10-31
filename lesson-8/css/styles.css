@@ -1,3 +1,4 @@
+@import url("typography.css");
 /* Page Layout */
 body {
 	width: 760px;
@@ -98,7 +99,12 @@ nav li {
 	margin-bottom: 0.25em;
 }
 /* STEP 7a: ORDER - Change the case of the A elements by setting the text-transform property to 'uppercase' */
-
+nav a {
+	text-transform: uppercase;
+}
+a {
+	text-transform: lowercase !important;
+}
 
 /* STEP 7b: ORDER - Change the case of the A elements again, setting them this time to 'lowercase' - notice that the later value wins out */
 
