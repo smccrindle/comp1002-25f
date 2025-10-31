@@ -4,13 +4,21 @@
 		<title>Bios - Ion Storm | Robo Blasters</title>
 		<meta charset="utf-8" />
 		<!-- STEP 1: LINK the external CSS file (EXTERNAL CSS) -->
-
+		<link href="css/styles.css" rel="stylesheet" />
+		
 		<!-- STEP 2: Alternatively, use @import to attach the same external CSS file (also EXTERNAL CSS) - comment out the above LINK element and put the @import directive inside the below STYLE tags - then open up styles.css in your editor for STEP 3 -->
-		<style>
-
-		</style>
+		<!-- <style>
+			@import url("css/styles.css");
+		</style> -->
 		<!-- STEP 4: Create another STYLE element below (EMBEDDED CSS), adding a CSS rule that changes the colour of all H4 elements to 'hotpink' -->
-
+		<style>
+			h4 {
+				color: hotpink;
+			}
+			h2, h3, h4 {
+				font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			}
+		</style>
 
 		<!-- STEP 6b: Override the font styles from the external CSS for the H2 and the H3 -->
 		<!-- STEP 10: Add a LINK element for the CSS to be used to print the page (css/print.css), making sure to set the media attribute to "print" - try to print the page from the browser -->
@@ -39,7 +47,7 @@
 			<!-- Image credit: Rôbô Tím Mẫu 43 by 星球 (https://openclipart.org/detail/272144/robo-tim-mau-43) -->
 			<p>The belligerent <strong>Ion Storm</strong> has some very serious anger management issues and has been known to fly into a rage over something as simple as someone forgetting to turn out the lights in the ordinance room. His <q>Shoot first, ask questions later</q> approach to problem solving often gets him and his teammates into unnecessary fights.</p>
 			<!-- STEP 5: Create a local style to override the embedded CSS for the H4, using the style attribute (INLINE CSS), setting the color of the heading to 'limegreen' - note that this is considered to be obtrusive - HTML and CSS should be kept separate wherever possible to maintain best practices - proceed to styles.css for STEP 6 -->
-			<h4>Special Powers</h4>
+			<h4 style="color: limegreen;">Special Powers</h4>
 			<p>This very destructive <strong>Robo Blaster</strong> has the ability to focus a concentrated pulse of supercharged plasma at any target he pleases, within a range of over five hundred metres. There is not much that can withstand a blast like this.</p>
 			<h4>Weaknesses</h4>
 			<p>Though <em>strong</em>, <em>fast</em>, and <em>well-armed</em>, <strong>Ion Storm</strong> is very stubborn and refuses to learn new things. He often will <em>not</em> consider a different approach because, <q>That’s the way we’ve always done it.</q> His refusal to change may ultimately be his undoing.</p>

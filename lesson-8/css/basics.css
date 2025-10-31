@@ -33,6 +33,9 @@ h3 {
 }
 
 /* STEP 7a: ATTRIBUTE Selector - Build a selector that targets any element with the attribute, 'lang', setting the border to '5px dotted red' */
+[lang*="en"] {
+	border: 5px dotted red;
+}
 
 /* STEP7b: Try some other regular expression type variations -
 
@@ -44,22 +47,45 @@ h3 {
 See https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors for more specifics */
 
 /* STEP 8: PSEUDOCLASS Selector - Build another selector that targets and paragraph element that is being hovered over with a pointer (:hover), setting the background-color to 'limegreen' */
+p:hover {
+	color: limegreen;
+	font-style: italic;
+}
 
-
-/* STEP 9a: PSEUDOELEMENT Selector - Create a selector to set the first letter of each paragraph to a llarger size with font-size: 300% */
-
+/* STEP 9a: PSEUDOELEMENT Selector - Create a selector to set the first letter of each paragraph to a larger size with font-size: 300% */
+p::first-letter {
+	font-size: 300%;
+}
 
 /* STEP 9b: PSEUDOELEMENT Selector - Type out another similar rule that targets the first line of each paragraph and sets the font-weight to 'bold' (you may have to reduce the width of the browser window to appreciate how this works visually)*/
-
+p::first-line {
+	text-transform: uppercase;
+}
 
 /* STEP 10: DECENDENT/CONTEXTUAL Selector - Make a selector that ONLY targets EM elements when they are contained by a Q element - set the text-transform to 'uppercase' - note how this avoids styling all the other EM elements on the page */
-
+h1 em {
+	text-transform: uppercase;
+}
 
 /* STEP 11: CHILD/DIRECT-DESCENDENT Selector - Create a selector that targets EM elements ONLY when they are directly contained by a P element - set the color to red - note that the EM element inside the Q (which is a child of a P) is NOT affected */
-
+p > em {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
 
 /* STEP 12a: ADJACENT SIBLING Selectors - Build a selector that targets ONLY P elements that are next to an H2 element and they share the same parent - set the margin to '2em' */
+h2 + p {
+	font-size: 200%;
+}
 
 /* STEP 12b: GENERAL SIBLING Selectors - Adjust the selector above so that it targets ALL P elements that are siblings of an H2 element, sharing the same parent */
+h2 ~ p {
+	background-color: lightgreen;
+}
 
 /* STEP 13: GROUPED Selectors - Finally, Add one last CSS rule that sets the font-family to 'Impact' for both H1 and H2 elements by separating the element selectors with a comma */
+h1, h2, h3 {
+	text-stroke: 3px darkorange;
+	text-shadow: 3px 3px 3px black;
+}

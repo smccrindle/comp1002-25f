@@ -60,7 +60,7 @@ body {
 	font: normal normal 100%/1.4 Helvetica, Arial, sans-serif;
 	color: #333;
 	/* STEP 6: INHERITANCE - Change the font for the BODY and observe the children (all HTML elements inside the BODY tags in this case) in the rendered page */
-
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 main h2 {
 	font-size: 120%;
@@ -78,7 +78,9 @@ main h3 {
 	text-align: right;
 }
 /* STEP 3: Style the H4 element, creating a selector, and setting CSS properties and values that will display fourth-level headings in boldface and red in colour - save the file, observe the change in your browser and head back to ion-storm.html for STEP 4 */
-
+h4 {
+	color: blue;
+}
 
 main p {
 	margin-bottom: 1em;
