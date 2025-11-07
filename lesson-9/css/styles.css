@@ -7,6 +7,7 @@
 /* STEP 2b: Comment out the above declaration, and add below it a font-family value that consists of a list of web-safe fonts (a font stack) */
 html {
 	font-family: Georgia, "Times New Roman", Times, serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
 }
 /* STEP 13: Construct a declaration for the page text using the shorthand font syntax (font-style, font-variant, font-weight, font-stretch, font-size/line-height, and font-family.) */
 html {
@@ -18,14 +19,14 @@ html {
 	color: darkgrey; 
 }
 /* STEP 4a: Try a variety of absolute CSS length/size units (mm, cm, in, pt, pc) to set the font-size on the HTML element */
-html {
-
-}
+/* html {
+	font-size: 3vw;
+} */
 /* STEP 4b: Now attempt a variety of relative CSS length/size units (em, ex, ch, rem, vh, vw, %) to do the same thing - use the rule you created above */
 
 /* STEP 4c: Set the root element (HTML) to 10px, then set the H1 and the H2 elements using rem - this is a common practice for controlling font sizing across a page */
 html {
-
+	font-size: 10px;
 }
 
 /* STEP 8: Apply font-variant to h1 or h2 (small-caps) */
@@ -48,13 +49,23 @@ h2 {
 
 }
 /* STEP 5: Line height for paragraphs (leading) - set line-height on the MAIN P elements - this can be a unitless setting (a factor) */
-
+main p {
+	line-height: 1.5;
+}
 /* STEP 11: Change the indenting of the paragraphs */
 main p {
 
 }
 /* STEP 6: Align text left, right, center and justify for paragraphs */
 main p {
-
+	text-align: justify;
 }
 /* STEP 7: Modify bold and italics, by applying to strong and em - swap them around */
+em {
+	font-style: oblique;
+	font-weight: bold;
+}
+strong {
+	font-weight: normal;
+	font-style: italic;
+}
