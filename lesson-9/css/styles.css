@@ -1,17 +1,21 @@
 /* External CSS to control styling of text */
 
 /* STEP 2a: Add a base font to the HTML element using a font category (serif, sans-serif, monospace, cursive, or fantasy) */
-
+/* html {
+	font-family: fantasy;
+} */
 /* STEP 2b: Comment out the above declaration, and add below it a font-family value that consists of a list of web-safe fonts (a font stack) */
-
+html {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
 /* STEP 13: Construct a declaration for the page text using the shorthand font syntax (font-style, font-variant, font-weight, font-stretch, font-size/line-height, and font-family.) */
 html {
 
 }
 /* STEP 3: Add a base color to the HTML element */
 html {
-	background-color: white;
-
+	background-color: linen;
+	color: darkgrey; 
 }
 /* STEP 4a: Try a variety of absolute CSS length/size units (mm, cm, in, pt, pc) to set the font-size on the HTML element */
 html {
