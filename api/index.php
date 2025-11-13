@@ -7,7 +7,7 @@
     
     // 3. Construct the absolute path to the target PHP file
     // Example: If the request is for /users/profile, we want [DOCUMENT_ROOT]/users/profile.php
-    $target_file = $_SERVER['DOCUMENT_ROOT'] . '/' . $relative_path . '.php';
+    $target_file = $_SERVER['DOCUMENT_ROOT'] . '/' . $relative_path;
 
     // 4. Optionally: If all your routing files live in a specific 'pages/' folder at the root
     // $target_file = $_SERVER['DOCUMENT_ROOT'] . '/pages/' . $relative_path . '.php';
