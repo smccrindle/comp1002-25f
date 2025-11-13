@@ -14,6 +14,9 @@
 		</header>
 		<main>
             <p>This repository contains all files that will be used during the lessons for this course.</p>
+<?php
+	phpinfo();
+?>
 		</main>
 		<footer>
 			<p><small>Computer Studies | Georgian College</small></p>
