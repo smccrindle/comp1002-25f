@@ -6,31 +6,16 @@
   },
   "routes": [
     {
-      "src": "^/(.*)/?includes/(.*)$",
-      "status": 404
-    },
-    {
-      "src": "^/\\.git/(.*)$",
-      "status": 404
-    },
-    {
-      "src": "^/(.*)\\.env$",
-      "status": 404
-    },
-    {
       "src": "^/(.*)\\.php$",
-      "dest": "/api/_run.php"
+      "dest": "/$1.php"
     },
     {
       "src": "^/(.*)/$",
-      "dest": "/api/_run.php"
+      "dest": "/$1/index.php"
     },
     {
       "src": "^/([^\\.]+)$",
-      "dest": "/api/_run.php"
-    },
-    {
-      "handle": "filesystem"
+      "dest": "/$1/index.php"
     }
   ]
 }
