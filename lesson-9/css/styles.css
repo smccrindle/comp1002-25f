@@ -6,12 +6,13 @@
 } */
 /* STEP 2b: Comment out the above declaration, and add below it a font-family value that consists of a list of web-safe fonts (a font stack) */
 html {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	/* font-family: Georgia, "Times New Roman", Times, serif; */
 	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* STEP 13: Construct a declaration for the page text using the shorthand font syntax (font-style, font-variant, font-weight, font-stretch, font-size/line-height, and font-family.) */
 html {
-
+	/* font: normal normal normal 10px/1.5 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
 /* STEP 3: Add a base color to the HTML element */
 html {
@@ -30,23 +31,28 @@ html {
 }
 
 /* STEP 8: Apply font-variant to h1 or h2 (small-caps) */
-
+header h2 {
+	font-variant: small-caps;
+}
 /* STEP 9: Apply underline, overline and strikethrough to the h1 */
-
+header h1 {
+	text-decoration: overline;
+}
 /* STEP 14: Apply text-shadow to the H1 element (horizontal offset, vertical offset, blur radius, color) */
 h1 {
-
+	text-shadow: 1px 1px 1px black;
 }
 
 /* STEP 15: In your browser, open up the developer tools, and click on the various parts of the DOM - observe the CSS panel - that's it for now! */
 
 /* STEP 10: Modify the letter and word spacing for the h2 */
 h2 {
-
+	letter-spacing: 0.15em;
+	word-spacing: 0.2em;
 }
 /* STEP 12: Transform the text of the h2 (none | capitalize | uppercase | lowercase | full-width) */
 h2 {
-
+	text-transform: capitalize;
 }
 /* STEP 5: Line height for paragraphs (leading) - set line-height on the MAIN P elements - this can be a unitless setting (a factor) */
 main p {
@@ -54,7 +60,7 @@ main p {
 }
 /* STEP 11: Change the indenting of the paragraphs */
 main p {
-
+	text-indent: 4em;
 }
 /* STEP 6: Align text left, right, center and justify for paragraphs */
 main p {
