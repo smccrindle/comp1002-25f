@@ -10,7 +10,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1.php"
+      "dest": "/api/index.php"
     }
   ]
 }
