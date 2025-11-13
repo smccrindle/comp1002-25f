@@ -19,15 +19,15 @@
     },
     {
       "src": "^/(.*)\\.php$",
-      "dest": "/$1.php"
+      "dest": "/api/_run.php"
     },
     {
       "src": "^/(.*)/$",
-      "dest": "/$1/index.php"
+      "dest": "/api/_run.php"
     },
     {
       "src": "^/([^\\.]+)$",
-      "dest": "/$1/index.php"
+      "dest": "/api/_run.php"
     },
     {
       "handle": "filesystem"
