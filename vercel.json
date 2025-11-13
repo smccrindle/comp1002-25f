@@ -21,14 +21,14 @@
       "src": "^/(.*)\\.php$",
       "dest": "/$1.php"
     },
-        {
-          "src": "^/(.*)/$",
-          "dest": "/$1/index.php"
-        },
-        {
-          "src": "^/([^\\.]+)$",
-          "dest": "/$1/index.php"
-        },
+    {
+      "src": "^/(.*)/$",
+      "dest": "/$1/index.php"
+    },
+    {
+      "src": "^/([^\\.]+)$",
+      "dest": "/$1/index.php"
+    },
     {
       "handle": "filesystem"
     }
