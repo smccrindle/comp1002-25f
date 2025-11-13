@@ -6,7 +6,8 @@
     // Example: Map 'users/profile' to 'pages/users/profile.php'
     $target_file = 'pages/' . $path . '.php';
 
-    echo('<h1>'.$target_file.'</h1>');
+    echo('<h1>$path: '.$path.'</h1>');
+    echo('<h1>$target_file: '.$target_file.'</h1>');
 
     /*
     if (file_exists($target_file)) {
