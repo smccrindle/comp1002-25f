@@ -18,19 +18,19 @@
       "status": 404
     },
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "^/(.*)\\.php$",
       "dest": "/$1.php"
     },
+        {
+          "src": "^/(.*)/$",
+          "dest": "/$1/index.php"
+        },
+        {
+          "src": "^/([^\\.]+)$",
+          "dest": "/$1/index.php"
+        },
     {
-      "src": "^/(.*)/$",
-      "dest": "/$1/index.php"
-    },
-    {
-      "src": "^/(.*)$",
-      "dest": "/$1"
+      "handle": "filesystem"
     }
   ]
 }
