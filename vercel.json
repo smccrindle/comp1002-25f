@@ -6,7 +6,30 @@
   },
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "^/(.*)/?includes/(.*)$",
+      "status": 404
+    },
+    {
+      "src": "^/\\.git/(.*)$",
+      "status": 404
+    },
+    {
+      "src": "^/(.*)\\.env$",
+      "status": 404
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/(.*)\\.php$",
+      "dest": "/$1.php"
+    },
+    {
+      "src": "^/(.*)/$",
+      "dest": "/$1/index.php"
+    },
+    {
+      "src": "^/(.*)$",
       "dest": "/$1"
     }
   ]
