@@ -11,12 +11,12 @@
 
     if (file_exists($target_file)) {
         // This executes the code using the absolute path
-        echo ('<h2>$target_file = '.$target_file.'</h2');
+        echo ('<h2>$target_file = '.$target_file.'</h2>');
         require $target_file;
     } else {
         // Handle 404
         http_response_code(404);
         echo ('<h1>404 Page not found</h1>');
-        echo ('<h2>$target_file = '.$target_file.'</h2');
+        echo ('<h2>$target_file = '.$target_file.'</h2>');
     }
 ?>
