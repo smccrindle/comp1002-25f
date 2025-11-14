@@ -24,7 +24,7 @@ switch ($extension) {
         }
         break;
 
-    case '':
+case '':
         // Case B: Directory access (e.g., /lesson-6/ or the root /)
         
         // Determine the base directory to check.
@@ -33,17 +33,25 @@ switch ($extension) {
             $base_dir .= '/' . $relative_path;
         }
 
-        // Check for index.php (dynamic content)
+        $found_target = false; // Flag to track if a file has been found
+
+        // 1. Check for index.php (Dynamic priority)
         $check_index_php = $base_dir . '/index.php';
         if (file_exists($check_index_php)) {
             $target_file = $check_index_php;
+            $found_target = true;
         } 
-        // Check for index.html (static content)
-        $check_index_html = $base_dir . '/index.html';
-        if (file_exists($check_index_html)) {
-            $target_file = $check_index_html;
-        } 
-        // If index.php or index.html is not found, the script falls through to the final 404.
+        
+        // 2. Check for index.html (Static fallback) only if PHP wasn't found
+        if (!$found_target) {
+            $check_index_html = $base_dir . '/index.html';
+            if (file_exists($check_index_html)) {
+                $target_file = $check_index_html;
+            } 
+        }
+        
+        // If neither index.php nor index.html is found, $target_file remains null, 
+        // and the script falls through to the final 404.
         
         break;
 
