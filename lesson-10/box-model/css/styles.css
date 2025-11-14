@@ -1,8 +1,10 @@
-
+@charset "utf-8";
 /* STEP 3: Set character encoding (must be first line of file) */
 /* STEP 4a: Set the border properties on the DIV#container - border-width, border-style, border-color */
 div#container {
-
+  border-style: dashed;
+  border-color: orange;
+  border-width: 5px 30px 20px;
 }
 /* STEP 4b: Control one of the four borders independently of the others - try border-top-style */
 
@@ -10,9 +12,14 @@ div#container {
 
 /* STEP 5a: Set padding values on the DIV#container element - set individual padding values, then use shorthand with the clock rule again (TRBL) */
 div#container {
-
-  margin: 5% auto;
-
+  padding: 5%;
+  padding-top: 10%;
+  margin: 5% auto 5% auto;
+  background-color: blanchedalmond;
+  background-image: url("../images/stucco.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size: cover;
 }
 /* STEP 5b: Apply a background-image to the same element (controlling background-repeat, background-position, and background-size) */
 
