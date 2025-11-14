@@ -7,14 +7,15 @@
     
     // Construct the absolute path to the target PHP file
     // Example: If the request is for /users/profile, we want [DOCUMENT_ROOT]/users/profile.php
-    $target_file = $_SERVER['DOCUMENT_ROOT'] . '/' . $relative_path;
+    $target_file = $_SERVER['DOCUMENT_ROOT'].'/'.$relative_path;
 
     if (file_exists($target_file)) {
         // This executes the code using the absolute path
-        require $target_file; 
+        require $target_file;
     } else {
         // Handle 404
         http_response_code(404);
         echo ('<h1>404 Page not found</h1>');
+        echo ($target_file);
     }
 ?>
