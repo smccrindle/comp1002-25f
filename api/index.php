@@ -33,12 +33,17 @@ switch ($extension) {
             $base_dir .= '/' . $relative_path;
         }
 
-        // ONLY check for index.php (Dynamic content)
+        // Check for index.php (dynamic content)
         $check_index_php = $base_dir . '/index.php';
         if (file_exists($check_index_php)) {
             $target_file = $check_index_php;
         } 
-        // If index.php is not found, the script falls through to the final 404.
+        // Check for index.html (static content)
+        $check_index_html = $base_dir . '/index.html';
+        if (file_exists($check_index_html)) {
+            $target_file = $check_index_html;
+        } 
+        // If index.php or index.html is not found, the script falls through to the final 404.
         
         break;
 
