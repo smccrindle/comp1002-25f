@@ -6,7 +6,12 @@
 
 /* STEP 1: Style the ASIDE element - change the background-color, and the width properties */
 aside {
-
+	background-color: lightblue;
+	width: 300px;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	z-index: 2;
 }
 
 /* STEP 2: Change the position property of the ASIDE element - static | relative | absolute | sticky - proceed to STEP 2a below */
@@ -47,6 +52,9 @@ aside p strong {
 	font-size: 2em;
 	padding: 0.25em;
 	/* STEP 4b: Position the blue question mark box (ASIDE P STRONG) with absolute, and see how you can place it within the positioned ASIDE parent element, instead of the document window. */
+	position: absolute;
+	top: 0;
+	right: 0;
 
 }
 
@@ -54,7 +62,11 @@ aside p strong {
 
 /* STEP 5a: Elements that are positioned have a vertical stacking order, z-index - set the HEADER element to position: absolute, with a background color of 'lightgoldenrodyellow' (seriously) */
 header {
-
+	position: absolute;
+	background-color: lightgoldenrodyellow;
+	top: 0;
+	right: 0;
+	z-index: 5;
 }
 /* STEP 5b: position the HEADER at the top right of the document window - since it is earlier in the code source order, it is rendered underneath the later ASIDE element */
 
