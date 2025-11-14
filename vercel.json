@@ -4,9 +4,9 @@
       "runtime": "vercel-php@0.7.4"
     }
   },
-  "routes": [
+"routes": [
     {
-      "src": "/(.*\\.(css|js|jpg|jpeg|pdf|png|gif|ico|svg|webp|txt|xml|json))$",
+      "src": "/(.*\\.(css|gif|html|ico|jpeg|jpg|js|json|pdf|png|svg|txt|webp|xml))$",
       "dest": "/$1"
     },
     {
