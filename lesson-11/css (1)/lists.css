@@ -1,0 +1,47 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* STEP 5: Styling Lists (list-style-type, list-style-position, list-style-image) */
+/* STEP 5a: list-style-type (none | square | circle | disc) */
+ul {
+    /* list-style-type: square;
+    list-style-position: outside; */
+    list-style-image: url("../images/check.png");
+}
+
+/* STEP 5b: Manipulate the list-style-position (inside | outside) in the rule above */
+/* STEP 5c: Substitute regular list markers with images (list-style-image) in the rule just below */
+ul {}
+
+/* STEP 5d: list-style-type (armenian | decimal | decimal-leading-zero | georgian | lower/upper-alpha | lower-greek | lower-latin | lower/upper-roman) - change in the rule below */
+ol {
+    list-style-type: decimal;
+}
+
+/* STEP 6: Laying Out Lists horizontally - use display: inline-block or inline */
+li {
+    /* display: inline-block; */
+}
+
+/* STEP 7: Targetting nested lists with contextual selectors - comment out all above declarations first */
+ul ul {
+    /* background-color: lightgrey; */
+}
+
+ul ul ul {
+    /* background-color: grey; */
+}
+
+/* STEP 8: Target specific levels of list items with direct-descendent selectors */
+main > ul > li > ul {
+    outline: 3px dashed pink;
+}
+
+h1 img {
+    float: right;
+}
+
+/* STEP 9: Collect all above embedded CSS styles here and place them in an external CSS file */
+
+/* STEP 10: Add a LINK element to this page, attaching the new external CSS file */
