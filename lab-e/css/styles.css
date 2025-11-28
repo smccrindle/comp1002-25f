@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+html {
+	background-color: lightskyblue;
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	color: black;
+	font-size: 10px;
+}
+
+body {
+	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1024px;
+}
+
+header {
+	font-size: 1.8rem;
+}
+header img {
+	float: left;
+}
+
+header h1,
+header h2 {
+	text-align: right;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+header h2 {
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+header nav ul {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+header nav li {
+	display: inline-block;
+}
+
+header nav a {
+	display: block;
+}
+
+header nav ul li {
+	position: relative;
+}
+
+header nav ul ul {
+	position: absolute;
+	left: -9999px;
+	background-color: white;
+	width: 15em;
+	z-index: 1;
+	border: 3px solid black;
+}
+
+header nav ul ul li {
+	display: block;
+}
+
+header nav li:hover ul {
+		left: auto;
+}
+
+header nav a:link {
+	padding: 0.5em;
+	text-decoration: none;
+	background-color: white;
+	color: black;
+}
+
+header nav a:visited {
+	color: black;
+}
+
+header nav a:focus {
+	background: orange;
+}
+
+header nav a:hover {
+	background: rgb(226,226,226,1);
+}
+
+header nav a:active {
+	background: yellow;
+	color: red;
+}
+
+/* STEP A: Add a background gradient to provide a shadow effect for just the top-level links */
+header nav > ul > li > a {
+	background: linear-gradient(to bottom, lightgrey 80%, grey 100%);
+}
+
+/* STEP B: For the current page (we will add class="current" with JavaScript later), remove the background gradient, and bold the font - then proceed to 'js/current-page-nav.js' for the next steps */
+header nav a.current,
+header nav > ul > li > a:has(+ ul a.current) {
+	background: white;
+	font-weight: bold;
+}
+
+main {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	text-align: justify;
+	background-color: white;
+	/* Arrange the SECTION and the ASIDE elements side-by-side in columns */
+	display: flex;
+	flex-direction: row;
+}
+
+main section {
+	width: 60%;
+	padding: 2em;
+}
+
+main section time {
+	font-style: italic;
+}
+
+main aside {
+	width: 40%;
+	padding: 2em 2em 2em 0;
+}
+
+aside img[alt$="block"] {
+	position: relative;
+	left: -2rem;
+}
+
+.new-feature {
+	padding-left: 25px;
+	background-image: url("../images/new.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+#emailAddress {
+	font-weight: bold;
+}
+
+[rel="external"] {
+	padding-right: 20px;
+	background-image: url("../images/extlink.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+/* Thank you to 'pnx' at https://openclipart.org/detail/202731/external-link-icon for the very cool external link icon */
+
+main a {
+	text-decoration: none;
+	color: lightskyblue;
+	font-weight: bold;
+}
+
+main a:hover {
+	text-decoration: underline;
+	color: orange;
+}
+
+blockquote::first-letter {
+	font-size: 2em;
+}
+
+footer {
+	margin-top: 2rem;
+	font-size: 1.6rem;
+}
+
+footer p {
+	text-align: right;
+}
+
+section > p {
+	text-indent: 2em;
+}
+
+h1, h2, footer {
+	color: white;
+}
+
+/* Styles to arrange image gallery links horizontally with no list markers */
+#blockGallery {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#blockGallery li {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+#blockCaption {
+	text-indent: 0;
+	text-align: left;
+}
