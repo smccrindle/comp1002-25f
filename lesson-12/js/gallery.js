@@ -20,17 +20,18 @@ document.addEventListener("DOMContentLoaded", function(){
             // console.log("The anchor clicked is " + event);
             // STEP 4a: For the link that was clicked, capture the value of the href attribute as a variable called 'source'
             let source = links[i].getAttribute("href");
-            console.log(source);
+            // console.log(source);
             // STEP 4b: Grab the IMG element with the id 'placeholder' and assign it to the variable of the same name
-
+            const placeholder = document.querySelector("#placeholder");
             // STEP 4c: Change the image file that the IMG element points to in the src attribute based on the link clicked
-
+            placeholder.setAttribute("src", source);
             // STEP 5a: Capture the title attribute of the link clicked and assign it as the value for the variable 'text'
-
+            let text = links[i].getAttribute("title");
+            // console.log(text);
             // STEP 5b: Grab the P element with the id 'description'
-
+            const description = document.querySelector("#description");
             // STEP 5c: Set the content of that paragraph to the value of the title attribute for the link clicked
-
+            description.textContent = text;
             // STEP 3c: Cancel the default behaviour of each hyperlink (which is to follow the href)
             event.preventDefault();
             // STEP 3b: End the 'onclick' event anonymous function
